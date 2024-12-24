@@ -1,4 +1,29 @@
-# .dockerignore
-.venv
-__pycache__
-*.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Docker
+docker-compose.override.yaml
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Pre-commit
+.pre-commit/

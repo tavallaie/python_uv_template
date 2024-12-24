@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UV_PROJECT_ENVIRONMENT: production
+        PYTHON_VERSION: 3.12.0
+        UV_EXTRA_GROUPS: ""
+    environment:
+      - UV_PROJECT_ENVIRONMENT=production
+    command: python -m src.main
